@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int choice,count;
+    int totalsum=0;
+    cout<<"1:enter the 1 ruppe note "<<endl;
+    cout<<"2:enter the 10 ruppe note "<<endl;
+    cout<<"3:enter the 100 ruppe note "<<endl;
+    cout<<"4:enter the 50 ruppe note "<<endl;
+    cout<<"5:exit "<<endl;
+    
+    
+    while(true){
+        
+        cout<<"enter the choice "<<endl;
+        cin>>choice;
+        switch(choice){
+             case 1:
+             cout<<"enter the 1 ruppe note ";
+             cin>>count;
+             totalsum+= count *1;
+             break;
+             case 2:
+             cout<<"enter the 10 ruppe note ";
+             cin>>count;
+             totalsum+= count*10;
+             break;
+             case 3:
+             cout<<"enter the 100 ruppe note ";
+             cin>>count;
+             totalsum+= count*100;
+             break;
+             case 4:
+             cout<<"enter the 50 ruppe note ";
+             cin>>count;
+             totalsum+=count*50;
+             break;
+             case 5:
+             cout<<"exit"<<totalsum<<endl;
+             return 0;
+             
+        }
+           cout<<"the total sum is " <<totalsum<<endl; 
+        
+        
+    }
+    return 0;
+}
